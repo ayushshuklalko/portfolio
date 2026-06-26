@@ -1,226 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ayush Shukla | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+
+<title>Ayush Shukla Resume</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+.btn-warning{
+    background:#FFD339;
+    border:none;
+    color:#000;
+    font-weight:600;
+    padding:12px 28px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn-warning:hover{
+    background:#f4c400;
+    transform:translateY(-2px);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#efefef;
+padding:40px 0;
+}
+
+.resume{
+
+max-width:1100px;
+margin:auto;
+background:#fff;
+overflow:hidden;
+box-shadow:0 0 30px rgba(0,0,0,.15);
+
+}
+
+.left{
+
+background:#f3f3f3;
+min-height:100%;
+padding-bottom:40px;
+
+}
+
+/* Yellow Top */
+
+.profile-top{
+
+height:300px;
+background:#FFD339;
+border-bottom-left-radius:180px;
+border-bottom-right-radius:180px;
+display:flex;
+justify-content:center;
+align-items:flex-end;
+padding-bottom:20px;
+
+}
+
+.profile-top img{
+
+width:190px;
+height:190px;
+border-radius:50%;
+border:8px solid #fff;
+object-fit:cover;
+
+}
+
+.section-title{
+
+font-size:34px;
+font-weight:700;
+margin:40px 35px 20px;
+
+}
+
+.contact{
+
+padding:0 35px;
+
+}
+
+.contact p{
+
+font-size:15px;
+margin-bottom:14px;
+
+}
+
+.contact i{
+
+width:32px;
+height:32px;
+background:#FFD339;
+border-radius:50%;
+text-align:center;
+line-height:32px;
+margin-right:10px;
+
+}
+
+.education{
+
+padding:0 35px;
+margin-top:45px;
+
+}
+
+.education h5{
+
+font-weight:700;
+margin-bottom:4px;
+
+}
+
+.education p{
+
+font-size:14px;
+margin-bottom:28px;
+
+}
+
+.skills{
+
+padding:0 35px;
+margin-top:45px;
+
+}
+
+.skills ul{
+
+padding-left:18px;
+
+}
+
+.skills li{
+
+margin-bottom:10px;
+font-size:15px;
+
+}
+
+.right{
+
+padding:60px;
+
+}
+
+.name{
+
+font-size:72px;
+font-weight:300;
+line-height:1;
+
+}
+
+.name span{
+
+font-weight:700;
+
+}
+
+.designation{
+
+font-size:30px;
+letter-spacing:6px;
+margin-top:15px;
+margin-bottom:60px;
+
+}
+
+.heading{
+
+font-size:36px;
+font-weight:700;
+margin-bottom:35px;
+
+}
+
+.job{
+
+margin-bottom:45px;
+
+}
+
+.job-title{
+
+display:flex;
+justify-content:space-between;
+font-weight:700;
+font-size:24px;
+
+}
+
+.company{
+
+font-size:22px;
+margin-bottom:10px;
+
+}
+
+.job p{
+
+color:#666;
+line-height:1.8;
+
+}
+
+.reference-box{
+
+margin-top:60px;
+
+}
+
+.ref-name{
+
+font-size:24px;
+font-weight:700;
+
+}
+
+.ref-designation{
+
+font-size:20px;
+margin-bottom:10px;
+
+}
+
+.ref-details{
+
+font-size:15px;
+
+}
+
+@media(max-width:991px){
+
+.right{
+
+padding:35px;
+
+}
+
+.name{
+
+font-size:48px;
+
+}
+
+.designation{
+
+font-size:20px;
+letter-spacing:3px;
+
+}
+
+.profile-top{
+
+height:240px;
+
+}
+
+.profile-top img{
+
+width:160px;
+height:160px;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>AYUSH SHUKLA</h1>
-    <h3>PHP | Laravel | WordPress | Node.js Developer</h3>
+<div class="container">
 
-    <p>
-        📍 Kalyanpur, Lucknow <br>
-        📧 ayushshukla3066@gmail.com <br>
-        📞 +91 8318255729
-    </p>
-</header>
+<div class="resume">
 
-<section id="about">
-    <h2>About Me</h2>
+<div class="row g-0">
 
-    <p>
-        PHP, WordPress and Node.js Developer with 3+ years of experience
-        developing scalable web applications and dynamic websites using
-        Laravel, PHP, Node.js, MySQL, WordPress and Shopify.
-        Passionate about building secure, fast and user-friendly applications.
-        Looking for opportunities to contribute to innovative software projects
-        while continuously improving my technical skills.
-    </p>
-</section>
+<!-- LEFT -->
 
-<section id="skills">
+<div class="col-lg-4 left">
 
-<h2>Core Skills</h2>
+<div class="profile-top">
 
-<ul>
-<li>PHP</li>
-<li>Laravel</li>
-<li>Node.js</li>
-<li>WordPress</li>
-<li>Shopify</li>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>Bootstrap</li>
-<li>MySQL</li>
-<li>REST API</li>
-<li>Git & GitHub</li>
-<li>Payment Gateway Integration</li>
-<li>Canva</li>
-</ul>
-
-</section>
-
-<section id="experience">
-
-<h2>Work Experience</h2>
-
-<div class="job">
-
-<h3>Digital Communique Pvt Ltd</h3>
-
-<p><strong>Web Developer</strong></p>
-
-<p>March 2023 - Present</p>
-
-<ul>
-
-<li>Developing scalable web applications using PHP, Laravel and MySQL.</li>
-
-<li>Building backend architecture for analytics and business platforms.</li>
-
-<li>Collaborating with developers to build new features.</li>
-
-<li>Maintaining client websites and improving performance.</li>
-
-</ul>
+<img src="img123.png" alt="Ayush">
 
 </div>
 
-<div class="job">
+<h2 class="section-title">
+CONTACT
+</h2>
 
-<h3>Zipex Technology Pvt Ltd</h3>
+<div class="contact">
 
-<p><strong>Junior Web Developer</strong></p>
+<p><i class="fa-solid fa-phone"></i> +91 8318255729</p>
 
-<p>August 2022 - February 2023</p>
+<p><i class="fa-solid fa-envelope"></i> ayushshukla3066@gmail.com</p>
 
-<ul>
+<p><i class="fa-solid fa-globe"></i> github.com/ayush</p>
 
-<li>Built dynamic websites using PHP and WordPress.</li>
-
-<li>Developed client projects using HTML, CSS, Bootstrap and Shopify.</li>
-
-<li>Testing and maintaining applications.</li>
-
-</ul>
+<p><i class="fa-solid fa-location-dot"></i> Kalyanpur, Lucknow</p>
 
 </div>
 
-</section>
+<h2 class="section-title">
+EDUCATION
+</h2>
 
-<section id="projects">
+<div class="education">
 
-<h2>Key Projects</h2>
-
-<div class="project">
-
-<h3>MedCab Hospital Management System</h3>
+<h5>Bachelor of Information Technology</h5>
 
 <p>
-Hospital Management System with online room booking,
-patient management and admin dashboard.
-Built using PHP, MySQL, Bootstrap and JavaScript.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>DDK Portal</h3>
-
-<p>
-Online Job Portal with Admin, Manager,
-Employer and Employee Panels.
-Developed using PHP, MySQL and Bootstrap.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Brahmin Shaadi</h3>
-
-<p>
-Matrimonial Portal built using Node.js with
-user registration, profile search and admin panel.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Shiva Parvati Matrimonial</h3>
-
-<p>
-Matrimonial platform with Razorpay Payment Integration
-and Membership Plans (Silver, Gold & Diamond).
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Love Psychic Indi</h3>
-
-<p>
-Wallet based Matrimonial System with PhonePe Payment
-Gateway Integration and secure wallet management.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>DC Hotel</h3>
-
-<p>
-Hotel Management Software with room booking,
-check-in/check-out and billing management.
-</p>
-
-</div>
-
-</section>
-
-<section id="education">
-
-<h2>Education</h2>
-
-<h3>Bachelor of Information Technology</h3>
-
-<p>
-The Institute of Technology & Management (ITM)<br>
+Institute of Technology & Management<br>
 2024 - Present
 </p>
 
-<br>
-
-<h3>Diploma in Information Technology</h3>
+<h5>Diploma in Information Technology</h5>
 
 <p>
-Jawaharlal Nehru Polytechnic (JLN)<br>
+Jawaharlal Nehru Polytechnic<br>
 74% | 2022
 </p>
 
-</section>
+</div>
 
-<section id="contact">
+<h2 class="section-title">
+CORE SKILLS
+</h2>
 
-<h2>Contact Me</h2>
+<div class="skills">
 
-<p><strong>Name:</strong> Ayush Shukla</p>
+<ul>
 
-<p><strong>Email:</strong> ayushshukla3066@gmail.com</p>
+<li>PHP</li>
 
-<p><strong>Phone:</strong> +91 8318255729</p>
+<li>Laravel</li>
 
-<p><strong>Location:</strong> Kalyanpur, Lucknow</p>
+<li>WordPress</li>
 
-</section>
+<li>Node.js</li>
 
-<footer>
+<li>MySQL</li>
 
-<p>© 2026 Ayush Shukla | All Rights Reserved</p>
+<li>Bootstrap</li>
 
-</footer>
+<li>HTML5</li>
 
-<script src="script.js"></script>
+<li>CSS3</li>
 
+<li>JavaScript</li>
+
+<li>REST API</li>
+
+<li>Git & GitHub</li>
+
+<li>Shopify</li>
+
+<li>Payment Gateway</li>
+
+<li>Canva</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- RIGHT START -->
+
+<div class="col-lg-8 right">
+
+<h1 class="name">
+Ayush <span>Shukla</span>
+</h1>
+
+<p class="designation">
+PHP | Laravel | WordPress Developer
+</p>
+<!-- ABOUT -->
+
+<h2 class="heading">ABOUT ME</h2>
+
+<p style="line-height:1.9;color:#666;margin-bottom:55px;">
+
+PHP, Laravel, WordPress and Node.js Developer with 3.5+ years of experience in developing scalable web applications, dynamic websites and custom backend solutions. Experienced in Laravel, PHP, WordPress, Node.js, MySQL, REST APIs, Payment Gateway Integration and Shopify. Passionate about writing clean code, improving performance and delivering user-friendly applications.
+
+</p>
+
+<!-- EXPERIENCE -->
+
+<h2 class="heading">WORK EXPERIENCE</h2>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>Web Developer</span>
+
+<span>2023 - Present</span>
+
+</div>
+
+<div class="company">
+
+Digital Communique Pvt Ltd
+
+</div>
+
+<p>
+
+• Developed scalable web applications using PHP, Laravel and MySQL.<br>
+
+• Created REST APIs and integrated third-party APIs.<br>
+
+• Worked on Hospital Management, Hotel Management and Job Portal projects.<br>
+
+• Improved website performance and fixed production bugs.<br>
+
+• Worked with Bootstrap, JavaScript and Git.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>Junior Web Developer</span>
+
+<span>2022 - 2023</span>
+
+</div>
+
+<div class="company">
+
+Zipex Technology Pvt Ltd
+
+</div>
+
+<p>
+
+• Developed WordPress and PHP websites.<br>
+
+• Customized Shopify stores.<br>
+
+• Built responsive interfaces using Bootstrap.<br>
+
+• Website maintenance and client support.
+
+</p>
+
+</div>
+
+<!-- PROJECTS -->
+
+<h2 class="heading">KEY PROJECTS</h2>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>MedCab Hospital Management System</span>
+
+</div>
+
+<p>
+
+Hospital Management System with patient records, room booking, doctor management, billing and admin dashboard using PHP, MySQL and Bootstrap.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>DDK Portal</span>
+
+</div>
+
+<p>
+
+Job Portal with Admin, Manager, Employer and Employee Panel using PHP, Laravel and MySQL.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>Brahmin Shaadi</span>
+
+</div>
+
+<p>
+
+Matrimonial Portal developed using Node.js with profile search and admin panel.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>Shiva Parvati Matrimonial</span>
+
+</div>
+
+<p>
+
+Membership based matrimonial website with Razorpay Payment Gateway Integration.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>Love Psychic India</span>
+
+</div>
+
+<p>
+
+Wallet based Matrimonial Platform with PhonePe Payment Gateway and Wallet System.
+
+</p>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">
+
+<span>DC Hotel</span>
+
+</div>
+
+<p>
+
+Hotel Management Software with Room Booking, Billing, Check-in and Check-out modules.
+
+</p>
+
+</div>
+
+<!-- REFERENCES -->
+
+<div class="reference-box">
+
+<h2 class="heading">
+
+CONTACT
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="ref-name">
+
+Ayush Shukla
+
+</div>
+
+<div class="ref-designation">
+
+PHP Developer
+
+</div>
+
+<div class="ref-details">
+
+<b>Phone :</b> +91 8318255729
+
+<br><br>
+
+<b>Email :</b>
+
+ayushshukla3066@gmail.com
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="ref-name">
+
+Location
+
+</div>
+
+<div class="ref-designation">
+
+Lucknow, Uttar Pradesh
+
+</div>
+
+<div class="ref-details">
+
+Available for Immediate Joining
+
+<br><br>
+
+Open to Relocation
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="text-center mt-4">
+    <button class="btn btn-warning btn-lg px-4" id="downloadBtn">
+        <i class="fa-solid fa-download"></i> Download Resume
+    </button>
+</div>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    const a = document.createElement("a");
+    a.href = "./Ayush_Shukla_Resume.pdf";
+    a.download = "Ayush_Shukla_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+</script>
 </body>
+
 </html>
